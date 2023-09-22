@@ -1,6 +1,7 @@
 :root {
   --Amarelo: #FAB824;
   --FontColor: #0D3E36;
+  --fontColor2: #4D625F;
 }
 
 * { 
@@ -8,4 +9,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-

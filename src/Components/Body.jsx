@@ -1,14 +1,19 @@
 import React from 'react'
+import style from './Body.module.css'
 
 function Body() {
-  return (
-    <div style={{width: '100%', height: '100%', paddingTop: 266, paddingBottom: 320, paddingLeft: 195, paddingRight: 195, opacity: 0.20, justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
-    <div style={{width: 1050, height: 314, position: 'relative'}}>
-        <div style={{width: 675, height: 314, left: 0, top: 0, position: 'absolute', background: '#FAB824', boxShadow: '400px 400px 400px ', borderRadius: 9999, filter: 'blur(400px)'}} />
-        <div style={{width: 675, height: 314, left: 375, top: 0, position: 'absolute', background: '#FDDD72', boxShadow: '400px 400px 400px ', borderRadius: 9999, filter: 'blur(400px)'}} />
-    </div>
-</div>
-  )
+    return (
+        <>
+            <div className={style.background}>
+            </div>
+            <div className={style.Container}>
+                <h1>Comece a construir seu portfólio de <br />criptomoedas</h1>
+                <span>Comece de forma rápida e segura a construir seu portfólio com a SharePre.</span>
+                    <a href="http://api.whatsapp.com/send?phone=5511957877222" target='_blank'>Começar</a>
+                
+            </div>
+        </>
+    )
 }
 
 export default Body
