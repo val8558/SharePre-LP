@@ -57,3 +57,19 @@
 .Container a:hover {
     scale: 0.95;
 }
+
+.cryptoContainer {
+    margin-top: 7.5rem;
+    margin-left: 4.875rem;
+}
+
+.cryptoContainer h2 {
+    color: 'black';
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+
+.cryptoTrend {
+    
+}
