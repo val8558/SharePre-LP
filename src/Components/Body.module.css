@@ -71,5 +71,7 @@
 }
 
 .cryptoTrend {
-    
+    display: flex;
+    border: solid 1px black;
+    margin-top: 1.5rem;
 }

@@ -1,7 +1,19 @@
 import React from 'react'
 import style from './Body.module.css'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import Coins from './Coins'
 
 function Body() {
+
+  const [listOfCoins, setListOfCoins] = useState ([])  
+
+  useEffect(() => {
+    axios.get("https://api.coinstats.app/public/v1/coins?skip=0&limit=4").then((response) => {
+        setListOfCoins(response.data.coins)
+    })
+  })
+    
     return (
         <>
             <div className={style.background}>
@@ -17,7 +29,11 @@ function Body() {
                     <h2>Criptomoedas populares</h2>
                 <div className={style.cryptoTrend}>
                     <div>
-
+                        {listOfCoins.map((coin => {
+                            return (
+                                <Coins key={coin.id}/>
+                            ) 
+                        }))}
                     </div>
                 </div>
                 </div>
