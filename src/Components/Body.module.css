@@ -59,19 +59,106 @@
 }
 
 .cryptoContainer {
+    display: flex;
+    flex-direction: column;
     margin-top: 7.5rem;
     margin-left: 4.875rem;
+    margin-right: 4.875rem;
+    gap: 1.5rem;
 }
 
 .cryptoContainer h2 {
-    color: 'black';
+    color: black;
     font-size: 24px;
     font-family: 'Raleway';
     font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .cryptoTrend {
     display: flex;
-    border: solid 1px black;
-    margin-top: 1.5rem;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    margin-left: 4.875rem;
+    margin-right: 4.875rem;
+}
+
+.characteristics {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding-top: 6.18rem;
+    align-items: center;
+}
+
+.characteristics h1 {
+    padding-left: 20.31rem;
+    padding-right: 20.31rem;
+    color: var(--FontColor);
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    font-family: 'Raleway';
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.characteristics span {
+    font-family: 'Roboto';
+    font-size: 1.125rem;
+    color: var(--FontColor2);
+}
+
+.charCard {
+    display: flex;
+    gap: 54px;
+    margin-left: 4.875rem;
+    margin-right: 4.875rem;
+}
+
+/* .charCard h1 {
+    align-self: stretch;
+    color: var(--font-color-black-title, #2B2B2B);
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.charCard span {
+    align-self: stretch;
+    color: #808080;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+} */
+
+.CardPort {
+    display: flex;
+    flex-direction: column;
+    height: 305px;
+    padding: 30px 30px 30px 28px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    border: 1px solid #EAEAEA;
+    background:  #FFF;
+    backdrop-filter: blur(100px);
+}
+
+.CardPort h1 {
+white-space: nowrap;
+color: var(--font-color-black-title, #2B2B2B);
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+}
+
+.CardPort span {
+    
 }
