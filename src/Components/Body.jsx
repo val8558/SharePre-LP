@@ -1,6 +1,9 @@
 import React from 'react'
 import style from './Body.module.css'
 import Crypto from '../assets/CImg.svg'
+import secur from '../assets/SecurityImg.svg'
+import crypto from '../assets/CryptoImg.svg'
+import Method from '../assets/MethodImg.svg'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Coins from './Coins'
@@ -51,24 +54,26 @@ function Body() {
                 <div className={style.CardPort}>
                     <img src={Crypto} />
                     <h1>Gerencie seu portfolio</h1>
-                    <span>Gerencie seu portfolio</span>
+                    <span>Compre e venda criptomoedas de qualquer lugar.
+
+</span>
                 </div>
                 <div className={style.CardSecu}>
-                    <img src="" />
+                    <img src={secur} />
                     <h1>Segurança</h1>
                     <span>
                         Negociação totalmente em confirmidade com o novo marco legal dos criptoativos.
                     </span>
                 </div>
                 <div className={style.CardSup}>
-                    <img src="" />
+                    <img src={crypto} />
                     <h1>Suporte a variação de valores</h1>
                     <span>
                         Total suporte as variaçoes de preço na hora da sua transação.
                     </span>
                 </div>
                 <div className={style.CardMeth}>
-                    <img src="" />
+                    <img src={Method} />
                     <h1>Metodo</h1>
                     <span>
                         Compre diretamente com um dos nossos vendedores por Whatsapp. 

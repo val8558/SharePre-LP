@@ -78,8 +78,9 @@
 .cryptoTrend {
     display: flex;
     gap: 1.5rem;
-    justify-content: space-evenly;
-    margin-left: 4.875rem;
+    justify-content: flex-start;
+    align-content: stretch;
+    /* margin-left: 4.875rem; */
     margin-right: 4.875rem;
 }
 
@@ -108,57 +109,96 @@
     font-family: 'Roboto';
     font-size: 1.125rem;
     color: var(--FontColor2);
+    margin-bottom: 4.68rem;
 }
 
 .charCard {
     display: flex;
+    justify-content: space-evenly;
     gap: 54px;
     margin-left: 4.875rem;
     margin-right: 4.875rem;
 }
 
-/* .charCard h1 {
-    align-self: stretch;
+
+.charCard h1 {
+    white-space: nowrap;
     color: var(--font-color-black-title, #2B2B2B);
-    font-family: 'Raleway';
+    font-family: Raleway;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px;
+    align-self: start;
 }
 
 .charCard span {
-    align-self: stretch;
-    color: #808080;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-} */
+}
+
+.charCard img {
+    width: 80px;
+    height: 80px;
+    align-self: flex-start;
+    margin-bottom: 1.68rem;
+}
 
 .CardPort {
     display: flex;
     flex-direction: column;
-    height: 305px;
     padding: 30px 30px 30px 28px;
     align-items: center;
     gap: 10px;
     border-radius: 18px;
     border: 1px solid #EAEAEA;
-    background:  #FFF;
-    backdrop-filter: blur(100px);
+    background: #FFF;
+    width: 296px;
+    height: 311px auto;
 }
 
-.CardPort h1 {
-white-space: nowrap;
-color: var(--font-color-black-title, #2B2B2B);
-font-family: Raleway;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
+.CardSecu {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px 28px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    width: 296px;
+    height: 311px auto;
 }
 
-.CardPort span {
-    
+
+.CardSup {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px 28px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    width: 296px;
+    height: 311px auto;
+}
+
+.CardSup > h1{
+    white-space: wrap;
+}
+
+.CardMeth {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px 28px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    width: 296px;
+    height: 311px 100%;
 }
