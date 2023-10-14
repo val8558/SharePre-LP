@@ -4,9 +4,13 @@ import Crypto from '../assets/CImg.svg'
 import secur from '../assets/SecurityImg.svg'
 import crypto from '../assets/CryptoImg.svg'
 import Method from '../assets/MethodImg.svg'
+import AccImg from '../assets/AccImg.svg'
+import PayImg from '../assets/PayImg.svg'
+import SupImg from '../assets/SupImg.svg'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Coins from './Coins'
+
 
 function Body() {
 
@@ -54,9 +58,7 @@ function Body() {
                 <div className={style.CardPort}>
                     <img src={Crypto} />
                     <h1>Gerencie seu portfolio</h1>
-                    <span>Compre e venda criptomoedas de qualquer lugar.
-
-</span>
+                    <span>Compre e venda criptomoedas de qualquer lugar.</span>
                 </div>
                 <div className={style.CardSecu}>
                     <img src={secur} />
@@ -76,10 +78,52 @@ function Body() {
                     <img src={Method} />
                     <h1>Metodo</h1>
                     <span>
-                        Compre diretamente com um dos nossos vendedores por Whatsapp. 
+                        Compre diretamente com um dos nossos vendedores por Whatsapp.
                     </span>
                 </div>
             </div>
+
+            <div className={style.StartContainer}>
+                <div className={style.LeftSide}>
+                    <h1>Como Começar</h1>
+                    <span>Maneira simples e facil de comecar seus investimentos em Cryptomoedas.</span>
+                    <a href="http://api.whatsapp.com/send?phone=5511957877222" target='_blank'>Comece Agora</a>
+                </div>
+
+                <div className={style.RightSide}>
+                    <div className={style.StartBox}>
+                        <div className={style.IconImg}>
+                            <img src={AccImg} alt="" />
+                        </div>
+                        <div className={style.CardText}>
+                            <h1>Sem criar conta</h1>
+                            <span>Faça a compra do criptoativo direto com um dos nossos vendedores e receba em sua carteira de preferência. </span>
+                        </div>
+
+                    </div>
+                    <div className={style.StartBox}>
+                        <div className={style.IconImg}>
+                            <img src={PayImg} alt="" />
+                        </div>
+                        <div className={style.CardText}>
+                            <h1>Pagamento fácil</h1>
+                            <span>Escolha a forma que pretende comprar seu criptoativo, podendo ser PIX, Tranferência bancária ou cartão crédito.</span>
+                        </div>
+
+                    </div>
+                    <div className={style.StartBox}>
+                        <div className={style.IconImg}>
+                            <img src={SupImg} alt="" />
+                        </div>
+                        <div className={style.CardText}>
+                            <h1>Suporte Personalizado</h1>
+                            <span>Suporte humano e personalizado para sua necessidade, Em caso de dúvidas um de entre em contato com nossos atendentes.</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </>
     )
 }

@@ -186,7 +186,7 @@
     height: 311px auto;
 }
 
-.CardSup > h1{
+.CardSup>h1 {
     white-space: wrap;
 }
 
@@ -201,4 +201,110 @@
     background: #FFF;
     width: 296px;
     height: 311px 100%;
+}
+
+.StartContainer {
+    margin-left: 4.875rem;
+    margin-right: 4.875rem;
+    margin-top: 6.62rem;
+    display: flex;
+    gap: 11.87rem;
+
+}
+
+.LeftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.LeftSide h1 {
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.LeftSide span {
+    color: #4D625F;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+.LeftSide a {
+    display: flex;
+    padding: 1rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    font-weight: '600';
+    background: var(--Amarelo);
+    border-radius: 0.62rem;
+    text-decoration: none;
+    height: 50px;
+    width: 11.87rem;
+
+    transition: 0.5seg;
+}
+
+.LeftSide a:hover {
+    scale: 0.95;
+}
+
+.RightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 54px;
+}
+
+.StartBox {
+    display: flex;
+    padding: 10px 52px 20px 20px;
+    align-self: stretch;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 18px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    width: 538px;
+    
+
+}
+
+.IconImg {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-self: flex-start;
+    margin-bottom: 1.68rem;
+}
+
+.CardText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+}
+
+.CardText>h1 {
+    font-family: "Raleway";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.CardText>span {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
 }
