@@ -1,5 +1,8 @@
 import style from "./Footer.module.css"
 import Logo from "../assets/SharePreLogo.svg"
+import Insta from "../assets/instagram-ic.svg"
+import Twitter from "../assets/twitter-ic.svg"
+import Face from "../assets/facebook-ic.svg"
 
 function Footer() {
     return (
@@ -8,9 +11,9 @@ function Footer() {
                 <img src={Logo} alt="" />
             </div>
             <div className={style.SocialMedia}>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img src={Insta} alt="" />
+                <img src={Face} alt="" />
+                <img src={Twitter} alt="" />
             </div>
             <div className={style.Infos}>
                 <p>Todos direitos reservados, SharePre Ltda.  CNPJ 45.953.406/0001-27</p>
